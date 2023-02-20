@@ -1,0 +1,1 @@
+gcloud run deploy dummy-backend --source . --project "ridian-staging"
