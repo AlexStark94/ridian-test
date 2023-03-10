@@ -8,13 +8,14 @@ yarn install
 yarn run dev
 ```
 
-## Description
+## Objective Description
 This project is meant to be used as an exercise.
 
 The exercise consists of developing 3 components (Nav, Returns and PlaceTrade) defined in the page.js file. Each component will have to query a backend service for data and then show the data to the user.
 
 ### Backend API Description
 URL: https://dummy-backend-rttuh5f3wq-uc.a.run.app/
+!IMPORTANT: If you have any issues with this url run the localversion of the backend and point your call to the localhost
 
 Endpoints:
 

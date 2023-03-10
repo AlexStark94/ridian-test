@@ -1,4 +1,5 @@
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 import pandas as pd
 import random
 import datetime
@@ -7,6 +8,16 @@ import time
 SYMBOLS = ["BTC", "ETH", "XRP", "BCH", "LTC", "ADA", "AVAX", "BNB", "TRX", "DOT"]
 
 app = FastAPI()
+
+origins = ["*"]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.get("/navs")
 async def navs():
